@@ -3,7 +3,7 @@ import { useNavigate, useParams } from "react-router-dom"
 
 import getPokemonById from "../Services/getPokemonById"
 
-const Pokemon = ({data}) => {
+const Pokemon = () => {
 
 
     const { id } = useParams()
