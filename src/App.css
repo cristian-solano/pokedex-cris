@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  
+  
 }
 
 .App-logo {
@@ -14,7 +16,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-image: url("https://1000marcas.net/wp-content/uploads/2020/01/Pok%C3%A9mon-emblema.jpg"); */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +38,4 @@
     transform: rotate(360deg);
   }
 }
+
