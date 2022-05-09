@@ -29,7 +29,7 @@ const Pokemon = ({data}) => {
             setWeight(res.data.weight)
             setHeight(res.data.height)
             setOrder(res.data.order)
-            console.log(res.data)
+            
             
     
             }
