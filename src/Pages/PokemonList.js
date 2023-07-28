@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import PokeItem from "../Components/PokeItem"
 import getAllPokemons from "../Services/getAllPokemons"
+import '../Styles/pokemonlist.css'
 
 const PokemonList = () => {
 
@@ -20,21 +21,25 @@ const PokemonList = () => {
 
     
     return (
-        <div>
-            {list}
+        <div className="pokeList-content">
+          
+          <div className="pokeList-items">
+          {list}
+          </div>
+            
         {arrOffsetPos === 0 ? (
-        <button className="btn btn-dark" type="button" onClick={() => setArrOffsetPos(arrOffsetPos + 20)}>
+        <button className="pokeList-buttons" type="button" onClick={() => setArrOffsetPos(arrOffsetPos + 20)}>
           Next 20
         </button>
       ) : (
-        <>
-          <button className="btn btn-dark" type="button" onClick={() => setArrOffsetPos(arrOffsetPos + 20)}>
+        <div className="pokeList-two-buttons">
+          <button className="pokeList-buttons" type="button" onClick={() => setArrOffsetPos(arrOffsetPos + 20)}>
             Next 20
           </button>
-          <button className="btn btn-dark" type="button" onClick={() => setArrOffsetPos(arrOffsetPos - 20)}>
+          <button className="pokeList-buttons" type="button" onClick={() => setArrOffsetPos(arrOffsetPos - 20)}>
             Prev 20
           </button>
-        </>
+        </div>
       )}
         </div>
     )

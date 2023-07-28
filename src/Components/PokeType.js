@@ -1,7 +1,7 @@
 const PokeType = ({type}) => {
     return (
-        <div>
-            {type.name}
+        <div className="poke-type">
+            <p>{type.name}</p>
         </div>
     )
 }

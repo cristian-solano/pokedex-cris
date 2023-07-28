@@ -1,0 +1,48 @@
+.pokeList-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, #012cebb9, #ced131d8), url('../images/background-pokelist.jpeg') fixed; /* W3C */
+}
+
+.pokeList-items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+
+.pokeList-buttons {
+    width: 100px;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fbfbfb;
+    padding: 5px 20px;
+    background: rgba(85, 17, 163, 0.835);
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: 1s;
+}
+
+
+.pokeList-buttons:hover {
+    scale: 1.1;
+}
+
+.pokeList-two-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

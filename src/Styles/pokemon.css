@@ -1,0 +1,117 @@
+.pokemon-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(90deg, rgb(126, 14, 201) 16%, rgb(15, 15, 12) 73%);
+}
+
+.pokemon-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-container img {
+    width: 300px;
+}
+
+.pokemon-names {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-names span  {
+    font-size: 80px;
+    font-weight: bold;
+    color: #fbfbfb;
+    text-shadow: 0 0 5px rgb(184, 184, 184), 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #e8ff18, 0 0 30px #49FF18, 0 0 40px #f0ff18, 0 0 55px #fbff18;
+}
+
+
+.pokemon-names img {
+    width: 300px;
+    object-fit: cover;
+    image-rendering: auto;
+    transition: 1s;
+}
+
+.pokemon-infor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 5px
+}
+
+.poke-characteristics {
+    width: 150px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba(119, 119, 119, 0.5), #9057574d),url('../images/pokebola.jpeg');
+    background-size: 300px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;   
+   
+}
+
+.poke-characteristics::-webkit-scrollbar {
+    display: none;
+}
+
+.poke-characteristics h3 {
+    color: #fbfbfb;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.poke-characteristics p{
+    color: #fbfbfb;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.poke-order {
+    width: 100px;
+    padding: 3px;
+    position: fixed;
+    top: 2%;
+    right: 2%;
+    
+}
+
+.poke-order h3 {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: bold;
+    color: #fbfbfb;
+}
+
+.poke-button-back {
+    width: 150px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    transition: .4s;
+    cursor: pointer;
+    color: #fbfbfb;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
